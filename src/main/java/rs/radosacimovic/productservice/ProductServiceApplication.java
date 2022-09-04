@@ -4,7 +4,6 @@ import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.Bean;
 import rs.radosacimovic.productservice.model.ProductEntity;
 import rs.radosacimovic.productservice.service.ProductService;
@@ -12,7 +11,6 @@ import rs.radosacimovic.productservice.service.ProductService;
 import javax.annotation.PostConstruct;
 import java.math.BigDecimal;
 
-@EnableEurekaClient
 @SpringBootApplication
 @RequiredArgsConstructor
 public class ProductServiceApplication {
